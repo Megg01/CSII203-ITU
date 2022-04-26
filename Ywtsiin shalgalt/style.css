@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+	color:#666666;
+}
+img{
+	height: 110px;
+	width: 110px;
+}
+table{
+	width: 900px;
+}
+.header ul{
+	text-align: right;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.header li{
+	padding: 10px;
+	list-style: none;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.header li:hover {
+	color:#e88000;
+}
+.title{
+	background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/2134.jpg);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color:white;
+	height: 300px;
+	width: 300px;
+}
+.buttonOne{
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	border: none;
+	background-color: #e88000;
+}
+.title h1{
+	text-decoration: underline 2px;
+}
+.column{
+	background-color: #e8e8e8;
+	padding: 20px;
+}
+.buttonTwo{
+	background-color: #666666;
+	color:white;
+	border: none;
+	border-radius: 2px;
+	padding: 5px;
+}
+.buttonThree{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: none;
+	background-color: #e88000;
+}
