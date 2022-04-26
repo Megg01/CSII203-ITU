@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>8</title>
+	<style type="text/css">
+		#cover{
+			position: relative;
+			margin: 0 auto;
+		}
+		#cover img{
+			position: absolute;
+			left: 0;
+			height: 200px;
+			width: 200px;
+			transition: opacity;
+			transition-duration: 3s;
+			transition-timing-function: linear;
+		}
+		#cover .top{
+			transition-delay: 0s;
+		}
+		#cover .topOne{
+			transition-delay: 3s;
+		}
+		#cover .middle{
+			transition-delay: 6s;
+		}
+		#cover .bottomOne{
+			transition-delay: 9s;
+		}
+		#cover .bottom{
+			transition-delay: 12s;
+		}
+		#cover:hover img{ opacity: 0;}
+	</style>
+</head>
+<body>
+		<div id="cover">
+			<img class="bottom" src="https://5.imimg.com/data5/AA/UO/HV/ANDROID-95461305/product-jpeg-500x500.jpg" alt="МОД">
+			<img class="bottomOne" src="https://5.imimg.com/data5/TR/FV/OL/ANDROID-95461305/product-jpeg-500x500.jpg" alt="ГОЛ">
+			<img class="middle" src="https://5.imimg.com/data5/IY/GQ/VM/ANDROID-95461305/product-jpeg-500x500.jpg" alt="БАЙГАЛЬ">
+			<img class="topOne" src="https://static.wixstatic.com/media/00036c_7807d47de2a0459dbe4912ea420a494e~mv2.jpg/v1/fill/w_320,h_320,q_90/00036c_7807d47de2a0459dbe4912ea420a494e~mv2.jpg" alt="MODOD">
+			<img class="top" src="https://static.wixstatic.com/media/00036c_5009a2302783451a8cea1ba1a93539e1~mv2.jpg/v1/fill/w_320,h_320,q_90/00036c_5009a2302783451a8cea1ba1a93539e1~mv2.jpg" alt="TENGER">
+		</div>
+</body>
+</html>

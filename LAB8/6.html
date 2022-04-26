@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6</title>
+	<style type="text/css">
+		div{
+			position: relative;
+			background: lightgreen;
+			height: 100px;
+			width: 200px;
+			text-align: center;
+			font-size: 150%;
+			border: 3px solid DarkGreen;
+			animation: moving 3s infinite linear;
+		}
+		@keyframes moving{
+			0% {left: 0px;top: 0px;}
+			25% {left: 0px;top: 500px;}
+			50% {left: 500px;top: 500px;}
+			75% {left: 500px;top: 0px;}
+			100% {left: 0px;top: 0px;}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Margin</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+body{
+	font-family: 'Oswald', sans-serif;
+}
+.fade{
+	float: left;
+	margin-left: 10px;
+	width: 150px;
+	height:40px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #bfbfbf;
+	color: white;
+}
+.fade:hover {
+	transition-duration: 1s;
+	background-color: grey;
+}
+.color{
+	float: left;
+	margin-left: 10px;
+	width: 150px;
+	height:40px;
+	text-align:center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: grey;
+	color: white;
+}
+.color:hover{
+	transition-duration: 1s;
+	color: black;
+}
+.grow{
+	float: left;
+	margin-left: 10px;
+	text-align:center;
+	width: 150px;
+	height:40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: grey;
+	color: white;
+}
+.grow:hover {
+	transition-duration: 1s;
+	transform: scale(1.2,1.2);
+}
+.shrink{
+	float: left;
+	margin-left: 10px;
+	text-align:center;
+	width: 150px;
+	height:40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: grey;
+	color: white;
+}
+.shrink:hover{
+	transition-duration: 1s;
+	transform: scale(0.8,0.8);
+}
+.rotate{
+	float: left;
+	margin-left: 10px;
+	text-align:center;
+	width: 150px;
+	height:40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: grey;
+	color: white;
+}
+.rotate:hover{
+	transition-duration: 0.8s;
+	transform: rotateZ(-45deg);
+}
+.container{
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	width: 150px;
+	height: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.container .back{
+	position: absolute;
+	top: 0;
+	left:0;
+	background-color: grey;
+	width: 0px;
+	height:40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.container .border{
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	height: 120px;
+	width: 150px;
+	background-color: white;
+	border: 5px solid grey;
+}
+.container .text{
+	position: absolute;
+	top: 0;
+	left:0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	color: black;
+	width: 150px;
+	height:40px;
+}
+.container:hover .text{
+	transition-duration: 1s;
+	color: white;
+}
+.container:hover .back{
+	transition-duration: 1s;
+	width: 150px;
+}
+
+

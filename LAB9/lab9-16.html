@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab9-16</title>
+	<script type="text/javascript">
+		var a,b,c,sorog=0,eyreg=0,teg=0;
+		a=window.prompt("1-р тоог оруулна уу");
+		b=window.prompt("2-р тоог оруулна уу");
+		c=window.prompt("3-р тоог оруулна уу");
+		a=parseInt(a);
+		b=parseInt(b);
+		c=parseInt(c);
+		if(a>0){
+			eyreg=eyreg+1;
+		}
+		else if(a==0){
+			teg=teg+1;
+			}
+			else{
+				sorog=sorog+1;
+			}
+		if(b>0){
+			eyreg=eyreg+1;
+		}
+		else if(b==0){
+			teg=teg+1;
+			}
+			else{
+				sorog=sorog+1;
+			}
+		if(c>0){
+			eyreg=eyreg+1;
+		}
+		else if(c==0){
+			teg=teg+1;
+			}
+			else{
+				sorog=sorog+1;
+			}
+		document.writeln("<h2>Сөрөг= "+sorog);
+		document.writeln("<br><h2>Тэг= "+teg);
+		document.writeln("<br><h2>Эерэг= "+eyreg);
+	</script>
+</head>
+<body>
+</body>
+</html>
