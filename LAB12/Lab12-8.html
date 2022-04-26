@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab12-8</title>
+	<script type="text/javascript">
+		var p=window.prompt("Тоог оруулна уу");
+		displayDigits(p);
+		function noogdvor(a,b){
+			return Math.floor(a/b);
+		}
+		function uldegdel(a,b){
+			return a%b;
+		}
+		function displayDigits(k){
+			var s=0;
+			var n=k;
+			while(n>0){
+				s++;
+				n=noogdvor(n,10);
+			}
+			var a=new Array(s);
+			i=s;
+			while(k>0){
+				a[i]=uldegdel(k,10);
+				k=noogdvor(k,10);
+				i--;
+			}
+			for(i=1;i<=s;i++){
+				document.writeln(a[i]+" "+" ");
+			}
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

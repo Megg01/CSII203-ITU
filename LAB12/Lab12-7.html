@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab12-7</title>
+	<script type="text/javascript">
+		var a=new Array(20);
+		var i=1;
+		while(true){
+			a[i]=window.prompt(i+"-р тоог оруулна уу");
+			if(a[i]==-1){
+				break;
+			}
+			i++;
+		}
+		for (var j=1; j <i; j++) {
+				document.writeln(a[j]+"- "+isEven(a[j])+"<br>");
+		}
+		function isEven(k){
+			if(k%2==0){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

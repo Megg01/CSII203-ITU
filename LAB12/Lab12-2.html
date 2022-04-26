@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab12-2</title>
+	<script type="text/javascript">
+		var a=window.prompt("Цагаа оруулна уу");
+		document.writeln("Зогсоолын төлбөр: "+calculateCharges(a)+"төгрөг");
+		function calculateCharges(a){
+			if(a<=3){
+				return 5000;
+			}
+			else if(a>3){
+				s=5000+(a-3)*1000;
+				if(s<=23000){
+					return s;
+				}
+				else{
+					return 23000;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

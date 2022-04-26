@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15-2</title>
+	<style type="text/css">
+		button{
+			display: block;
+			height: 40px;
+			width: 80px;
+			margin: 10px;
+		}
+		button:hover {
+			background-color: black;
+			color: white;
+		}
+		p{
+			font-size: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function fontChange(){
+			var x = document.getElementById("size").value;
+			document.getElementById("text").style.fontSize = x+"px";
+		}
+	</script>
+</head>
+<body>
+	<p id="text">Hello World</p>
+	<input type="number" id="size"></input>
+	<button onclick="fontChange()">Font change</button>
+</body>
+</html>

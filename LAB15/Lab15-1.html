@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15-1</title>
+	<style type="text/css">
+		button{
+			height: 40px;
+			width: 40px;
+		}
+		button:hover {
+			background-color: black;
+			color: white;
+		}
+		p{
+			font-size: 30px;
+		}
+	</style>
+	<script type="text/javascript">
+		function plus(){
+			var x = document.getElementById("number").innerHTML;
+			x=parseInt(x);
+			x++;
+			document.getElementById("number").innerHTML = x;
+		}
+	</script>
+</head>
+<body>
+	<p id="number">0</p>
+	<button onclick="plus()">Tap</button>
+</body>
+</html>

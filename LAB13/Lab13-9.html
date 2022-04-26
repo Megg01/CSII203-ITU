@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab13-9</title>
+	<script type="text/javascript">
+		function start(){
+		var a=new Array(1000),b=[];
+		var i,j;
+		a[0]=0;
+		a[1]=0;
+		for(i=2;i<1000;i++){
+			a[i]=1;
+		}
+		for(i=2;i<1000;i++){
+			if(a[i]==1){
+				for(j=i+1;j<1000;j++){
+					if(j%i==0){
+						a[j]=0;
+					}
+				}
+			}
+		}
+		for(j=0,i=2;i<1000;i++){
+			if(a[i]==1){
+				b[j]=i;
+				j++;
+			}
+		}
+		output_array(b, document.getElementById("output"));
+		}
+		function output_array(theArray, output){
+			var content= "<table border='1'>";
+			for(i=0;i<theArray.length;i++){
+				content+=("<tr><th>"+theArray[i]+"</th></tr>");
+			}
+			content+="</table>";
+			output.innerHTML = content;
+		}
+		window.addEventListener("load",start, false);
+	</script>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+</html>

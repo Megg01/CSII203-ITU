@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab12-11</title>
+	<script type="text/javascript">
+		var dun=window.prompt("Дүнг оруулна уу");
+		document.writeln("Авсан дүн: "+qualityPoints(dun));
+		function qualityPoints(a){
+			if(100>=a && a>=90){
+				return "A";
+			}
+			else if(90>a && a>=80){
+				return "B";
+			}
+			else if(80>a && a>=70){
+				return "C";
+			}
+			else if(70>a && a>=60){
+				return "D";
+			}
+			else if(60>a && a>=0){
+				return "F";
+			}
+			else{
+				return "Дүнг буруу оруулсан байна.";
+			}
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

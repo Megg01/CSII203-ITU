@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab14-1</title>
+	<script type="text/javascript">
+		function odoo(){
+			var d = new Date();
+			window.alert(d);
+		}
+		function yest(){
+			var d = new Date();
+			d.setDate((d.getDate()-1));
+			window.alert(d);
+		}
+		function tenyears(){
+			var d = new Date();
+			d.setFullYear((d.getFullYear()-10));
+			window.alert(d);
+		}
+		function week(){
+			var d = new Date();
+			d.setDate((d.getDate()-7));
+			window.alert(d);
+		}
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<th><input type="button" value="Одоогийн цаг" onclick="odoo()"></th>
+		</tr>
+		<tr>
+			<th><input type="button" value="24 цагийн өмнө" onclick="yest()"></th>
+		</tr>
+		<tr>
+			<th><input type="button" value="10 жилийн өмнө" onclick="tenyears()"></th>
+		</tr>
+		<tr>
+			<th><input type="button" value="7 хоногийн өмнө" onclick="week()"></th>
+		</tr>
+	</table>
+</body>
+</html>

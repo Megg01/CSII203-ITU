@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15-5</title>
+	<script type="text/javascript">
+		function color(){
+			var mur = document.getElementsByTagName("tr");
+   			for(var i=0; i<mur.length; i++){
+        		if(i%2 != 0){
+          			mur[i].style.backgroundColor = '#fff68f';
+        		}
+    		}
+		}
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td><strong>Name</strong></td>
+			<td><strong>Town</strong></td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Sofia</td>
+		</tr>
+		<tr>
+			<td>Nick</td>
+			<td>Varna</td>
+		</tr>
+		<tr>
+			<td>Didi</td>
+			<td>Ruse</td>
+		</tr>
+		<tr>
+			<td>Tedy</td>
+			<td>Varna</td>
+		</tr>
+	</table>
+	<button onclick="color()">Colorize</button>
+</body>
+</html>

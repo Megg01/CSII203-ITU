@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15-4</title>
+	<style type="text/css">
+		div{
+			display: block;
+		}
+		input{
+			display: block;
+		}
+	</style>
+	<script type="text/javascript">
+		function urjih(){
+			var x = document.getElementsByTagName("input")[0].value;
+			var y = document.getElementsByTagName("input")[1].value;
+			var s = "The result is:<br>"+x*y;
+			document.getElementById("result").innerHTML = s;
+		}
+		function huvaah(){
+			var x = document.getElementsByTagName("input")[0].value;
+			var y = document.getElementsByTagName("input")[1].value;
+			var s = "The result is:<br>"+x/y;
+			document.getElementById("result").innerHTML = s;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p>1st Number</p>
+		<input type="number">
+	</div>
+	<div>
+		<p>2nd Number</p>
+		<input type="number">
+	</div>
+	<button onclick="urjih()">Multiply</button>
+	<button onclick="huvaah()">Divide</button>
+	<p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab12-12</title>
+	<script type="text/javascript">
+		function flip(){
+			var s=Math.floor(Math.random()*2);
+			if(s==0){
+				document.writeln("Too");
+			}
+			else{
+				document.writeln("Suld");
+			}
+		}
+	</script>
+	<style type="text/css">
+		input[type="button"]{
+			height: 50px;
+			width: 70px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="button" value="Toss" onclick="flip()">
+	</div>
+</body>
+</html>

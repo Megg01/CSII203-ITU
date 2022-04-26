@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab14-12</title>
+	<script type="text/javascript">
+		var ognoo = window.prompt("Огноог оруулна уу");
+		ognoo = ognoo.split("-");
+		var d = new Date(ognoo[0], ognoo[1]-1, ognoo[2]);
+		var odor = d.getDay();
+		switch(odor){
+			case 1:
+				document.writeln("Даваа");
+				break;
+			case 2:
+				document.writeln("Мягмар");
+				break;
+			case 3:
+				document.writeln("Лхагва");
+				break;
+			case 4:
+				document.writeln("Пүрэв");
+				break;
+			case 5:
+				document.writeln("Баасан");
+				break;
+			case 6:
+				document.writeln("Бямба");
+				break;
+			default:
+				document.writeln("Ням");
+				break;
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

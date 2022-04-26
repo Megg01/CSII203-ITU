@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15-6</title>
+	<style type="text/css">
+		p{
+			margin: 0px;
+		}
+		div{
+			margin: 5px;
+		}
+	</style>
+	<script type="text/javascript">
+		function nemeh(){
+			var name = document.getElementById("name").value;
+			var price = document.getElementById("price").value;
+			var table = document.getElementById("table");
+            var rowl = table.rows.length;
+            var mur = table.insertRow(rowl-1);
+            mur.insertCell(0).innerHTML= name;
+   			mur.insertCell(1).innerHTML= price;
+   			var total = parseInt(document.getElementById("total").innerHTML);
+   			total += parseInt(price);
+			document.getElementById("total").innerHTML = total;
+		}
+		function total(){
+			var table = document.getElementById("table");
+	        var total = 0;
+	        for(var i=1; i<table.rows.length-1; i++) {
+	            var s = parseInt(table.rows[i].cells[1].innerHTML);
+	            total += s;
+	        }
+	        return total;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p>Name:</p>
+		<input type="text" id="name">
+	</div>
+	<div>
+		<p>Price:</p>
+		<input type="number" id="price">
+	</div>
+	<button onclick="nemeh()">Insert</button>
+	<table border="1" cellspacing="0" id="table">
+		<tr>
+			<td><strong>Item</strong></td>
+			<td><strong>Price</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><strong id="total">0</strong></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab14-13</title>
+	<script type="text/javascript">
+		var mungu = window.prompt("Мөнгөн дүнгээ оруулна уу");
+		var b = [], i = 0, c = [], a="";
+		var n = (mungu*100)%100;
+		while(n>0){
+			c[i]=n%10;
+			n = Math.floor(n/10);
+			i++;
+		}
+		i=0;
+		mungu = Math.floor(mungu);
+		while(mungu>0){
+			b[i] = mungu%10;
+			mungu = Math.floor(mungu/10);
+			i++;
+		}
+		i=b.length;
+		var j=c.length;
+			switch(c[j-j]){
+				case 1:
+					a = "нэг мөнгө";
+					break;
+				case 2:
+					a = "хоёр мөнгө";
+					break;
+				case 3:
+					a = "гурав мөнгө";
+					break;
+				case 4:
+					a = "дөрөв мөнгө";
+					break;
+				case 5:
+					a = "тав мөнгө";
+					break;
+				case 6:
+					a = "зургаа мөнгө";
+					break;
+				case 7:
+					a = "долоо мөнгө";
+					break;
+				case 8:
+					a = "найм мөнгө";
+					break;
+				case 9:
+					a = "ес мөнгө";
+					break;
+				default:
+					if((1<=c[j-(j-1)] && c[j-(j-1)]<=9)){
+						a = a+" мөнгө";
+					}
+					else{
+						a = "";
+					}
+					break;
+			}
+			switch(c[j-(j-1)]){
+				case 1:
+					a = "арван "+a;
+					break;
+				case 2:
+					a = "хорин "+a;
+					break;
+				case 3:
+					a = "гучин "+a;
+					break;
+				case 4:
+					a = "дөчин "+a;
+					break;
+				case 5:
+					a = "тавин "+a;
+					break;
+				case 6:
+					a = "жаран "+a;
+					break;
+				case 7:
+					a = "далан "+a;
+					break;
+				case 8:
+					a = "наян "+a;
+					break;
+				case 9:
+					a = "ерөн "+a;
+					break;
+				default:
+					a = ""+a;
+					break;
+			}
+			switch(b[i-i]){
+				case 1:
+					a = "нэг төгрөг "+a;
+					break;
+				case 2:
+					a = "хоёр төгрөг "+a;
+					break;
+				case 3:
+					a = "гурав төгрөг "+a;
+					break;
+				case 4:
+					a = "дөрөв төгрөг "+a;
+					break;
+				case 5:
+					a = "тав төгрөг "+a;
+					break;
+				case 6:
+					a = "зургаа төгрөг "+a;
+					break;
+				case 7:
+					a = "долоо төгрөг "+a;
+					break;
+				case 8:
+					a = "найм төгрөг "+a;
+					break;
+				case 9:
+					a = "ес төгрөг "+a;
+					break;
+				default:
+					if((1<=b[i-(i-1)] && b[i-(i-1)]<=9) || (1<=b[i-(i-2)] && b[i-(i-2)]<=9) || (1<=b[i-(i-3)] && b[i-(i-3)]<=9) || (1<=b[i-(i-4)] && b[i-(i-4)]<=9)){
+						a = " төгрөг "+a;
+					}
+					else{
+						a = ""+a;
+					}
+					break;
+			}
+			switch(b[i-(i-1)]){
+				case 1:
+					a = "арван "+a;
+					break;
+				case 2:
+					a = "хорин "+a;
+					break;
+				case 3:
+					a = "гучин "+a;
+					break;
+				case 4:
+					a = "дөчин "+a;
+					break;
+				case 5:
+					a = "тавин "+a;
+					break;
+				case 6:
+					a = "жаран "+a;
+					break;
+				case 7:
+					a = "далан "+a;
+					break;
+				case 8:
+					a = "наян "+a;
+					break;
+				case 9:
+					a = "ерөн "+a;
+					break;
+				default:
+					a = ""+a;
+					break;
+			}
+			switch(b[i-(i-2)]){
+				case 1:
+					a = "нэг "+"зуун "+a;
+					break;
+				case 2:
+					a = "хоёр "+"зуун "+a;
+					break;
+				case 3:
+					a = "гурав "+"зуун "+a;
+					break;
+				case 4:
+					a = "дөрөв "+"зуун "+a;
+					break;
+				case 5:
+					a = "тав "+"зуун "+a;
+					break;
+				case 6:
+					a = "зургаа "+"зуун "+a;
+					break;
+				case 7:
+					a = "долоо "+"зуун "+a;
+					break;
+				case 8:
+					a = "найм "+"зуун "+a;
+					break;
+				case 9:
+					a = "ес "+"зуун "+a;
+					break;
+				default:
+					a = ""+a;
+					break;
+			}
+			switch(b[i-(i-3)]){
+				case 1:
+					a = "нэг "+"мянга "+a;
+					break;
+				case 2:
+					a = "хоёр "+"мянга "+a;
+					break;
+				case 3:
+					a = "гурав "+"мянга "+a;
+					break;
+				case 4:
+					a = "дөрөв "+"мянга "+a;
+					break;
+				case 5:
+					a = "тав "+"мянга "+a;
+					break;
+				case 6:
+					a = "зургаа "+"мянга "+a;
+					break;
+				case 7:
+					a = "долоо "+"мянга "+a;
+					break;
+				case 8:
+					a = "найм "+"мянга "+a;
+					break;
+				case 9:
+					a = "ес "+"мянга "+a;
+					break;
+				default:
+					a = ""+a;
+					break;
+			}
+			switch(b[i-(i-4)]){
+				case 1:
+					a = "арван "+a;
+					break;
+				case 2:
+					a = "хорин "+a;
+					break;
+				case 3:
+					a = "гучин "+a;
+					break;
+				case 4:
+					a = "дөчин "+a;
+					break;
+				case 5:
+					a = "тавин "+a;
+					break;
+				case 6:
+					a = "жаран "+a;
+					break;
+				case 7:
+					a = "далан "+a;
+					break;
+				case 8:
+					a = "наян "+a;
+					break;
+				case 9:
+					a = "ерөн "+a;
+					break;
+				default:
+					a = ""+a;
+					break;
+			}
+		document.writeln(a);
+	</script>
+</head>
+<body>
+</body>
+</html>

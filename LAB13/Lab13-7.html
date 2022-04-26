@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab13-7</title>
+	<script type="text/javascript">
+		var a=[],i,j;
+		for(i=0;i<10;i++){
+			a[i]=window.prompt("a["+i+"]");
+			for(s=0,j=0;j<i;j++){
+				if(a[j]==a[i]){
+					s+=1;
+				}
+			}
+			if(s==0){
+				document.writeln(a[i]);
+			}
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

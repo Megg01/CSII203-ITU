@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab12-9</title>
+	<script type="text/javascript">
+		var a=window.prompt("Цельсийн температур бол 'c' үсэг фаренгейтийн температур бол 'f' үсэг");
+		var b=window.prompt();
+		if(a=='f'){
+			document.writeln(celcius(b));
+		}
+		if(a=='c'){
+			document.writeln(far(b));
+		}
+		function celcius(f){
+			return 5/9*(f-32);
+		}
+		function far(c){
+			return 9/5*c+32;
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

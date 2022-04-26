@@ -1,0 +1,30 @@
+<!toolohOCTYPE html>
+<html>
+<heatooloh>
+	<title>Lab14-9</title>
+	<script type="text/javascript">
+		var text = window.prompt("Өгүүлбэрээ оруулна уу");
+		text = text.split(" ");
+		var jijig = ["а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "к", "л", "м", "н", "о", "ө", "р", "с", "т", "у", "ү", "ф", "х", "ц", "ч", "ш", "щ", "э", "ю", "я"];
+		var tom = ["А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "К", "Л", "М", "Н", "О", "Ө", "Р", "С", "Т", "У", "Ү", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Э", "Ю", "Я"];
+		var tooloh=[];
+		for(var i=0; i<jijig.length;i++){
+			tooloh[i] = 0;
+		}
+		for(var i=0; i<text.length; i++){
+			for(var j=0; j<jijig.length; j++){
+				if(text[i][0]==jijig[j] || text[i][0]==tom[j]){
+					tooloh[j]+=1;
+				}
+			}
+		}
+		for(var j=0; j<tooloh.length;j++){
+			if(tooloh[j]!=0){
+				document.writeln(jijig[j]+"."+tooloh[j]+"<br>");
+			}
+		}
+	</script>
+</heatooloh>
+<botoolohy>
+</botoolohy>
+</html>

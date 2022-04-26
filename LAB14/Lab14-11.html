@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab14-11</title>
+	<script type="text/javascript">
+		function hevleh(){
+			var text = document.getElementById("text").value;
+			text = text.split(" ");
+			for(var i=0; i<text.length; i++){
+				var j=text[i].length;
+				if(text[i].substring(j-2,j)=='на' || text[i].substring(j-2,j)=='нэ' || text[i].substring(j-2,j)=='но' || text[i].substring(j-2,j)=='нө'){
+					text[i]+="<br>";
+					document.getElementById("na").innerHTML+= text[i];
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<table>
+	<tr>
+		<textarea id="text"></textarea>
+		<button type="button" onclick="hevleh()">Submit</button>
+	</tr>
+	<tr>
+		<p id="na"></p>
+	</tr>
+</table>
+</body>
+</html>

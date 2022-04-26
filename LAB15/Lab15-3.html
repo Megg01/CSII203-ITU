@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab15-3</title>
+	<script type="text/javascript">
+		function husnegt(){
+			var n = document.getElementsByTagName("input")[0].value;
+			var m = document.getElementsByTagName("input")[1].value;
+			var k=1;
+			var result = "<table border='1'>";
+			for(var i=0; i<n; i++){
+				result += "<tr>";
+				for(var j=0; j<m; j++){
+					result += "<th>"+k+"</th>";
+					k++;
+				}
+				result += "</tr>";
+			}
+			result += "</table>";
+			document.getElementById("table").innerHTML = result;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<p>Мөрийн тоо</p>
+		<input type="number">
+	</div>
+	<div>
+		<p>Баганын тоо</p>
+		<input type="number">
+	</div>
+	<button onclick="husnegt()">Үүсгэх</button>
+	<div id="table"></div>
+</body>
+</html>

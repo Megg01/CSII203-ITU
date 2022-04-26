@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab13-3</title>
+</head>
+<body>
+	<ol type="a">
+		<li>
+			<script type="text/javascript">
+				var f=[1,2,3,4,5,6,7];
+				document.writeln(f[6]);
+			</script>
+		</li>
+		<li>
+			<script type="text/javascript">
+				var g=[8,8,8,8,8];
+			</script>
+		</li>
+		<li>
+			<script type="text/javascript">
+				var a=[];
+				for(var i=0;i<100;i++){
+					a[i]=i+1;
+				}
+				var total=0;
+				for(var i=0;i<100;i++){
+					total+=a[i];
+				}
+				document.writeln(total);
+			</script>
+		</li>
+		<li>
+			<script type="text/javascript"> 
+				var a=[1,2,3,4,5,6,7,8,9,10,11], b=new Array(34);
+				for(var i=0;i<11;i++){
+					b[i]=a[i];
+				}
+			</script>
+		</li>
+		<li>
+			<script type="text/javascript">
+				var w=[];
+				for(var i=0;i<99;i++){
+					w[i]=i+0.5;
+				}
+				var k=0,s=0;
+				for(var i=1;i<99;i++){
+					if(w[k]<w[i]){
+						k=i;
+					}
+					if(w[s]>w[i]){
+						s=i;
+					}
+				}
+				document.writeln("max="+w[k]);
+				document.writeln("min="+w[s]);
+			</script>
+		</li>
+	</ol>
+</body>
+</html>

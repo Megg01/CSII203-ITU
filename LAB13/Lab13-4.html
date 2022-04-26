@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab13-4</title>
+</head>
+<body>
+	<ol type="a">
+		<li>
+			var t=[][];
+		</li>
+		<li>2</li>
+		<li>3</li>
+		<li>6</li>
+		<li>t[0][0], t[0][1], t[0][2]</li>
+		<li>t[0][2], t[1][2]</li>
+		<li>t[0][1]=0;</li>
+		<li>
+			t[0][0]=0;
+			t[0][1]=0;
+			t[0][2]=0;
+			t[1][0]=0;
+			t[1][1]=0;
+			t[1][2]=0;
+		</li>
+		<li>
+			<script type="text/javascript">
+				var t=[[2,1,3],[4,5,6]];
+				var k=t[0][0];
+				for(var i=0;i<2;i++){
+					for(var j=0;j<3;j++){
+						if(k>t[i][j]){
+							k=t[i][j];
+						}
+					}
+				}
+				document.writeln(k);
+			</script> 
+		</li>
+		<li>
+			document.writeln(t[0][0]);<br>
+			document.writeln(t[0][1]);<br>
+			document.writeln(t[0][2]);
+		</li>
+		<li>
+			<div id="output"></div>
+			<script type="text/javascript">
+				function start(){
+					var t=[[1,2,3],[4,5,6]];
+					output_array(t, document.getElementById("output"));
+				}
+				function output_array(theArray, output){
+					var results="<table border='1'>";
+					for(var row in theArray){
+						results+="<tr>";
+						for(var column in theArray[row]){
+							results+="<th>"+theArray[row][column]+"</th>";
+						}
+						results+="</tr>";
+					}
+					results+="</table";
+					output.innerHTML=results;
+				}
+				window.addEventListener("load",start, false);
+			</script>
+		</li>
+	</ol>
+</body>
+</html>

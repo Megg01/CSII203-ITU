@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab14-3</title>
+	<script type="text/javascript">
+		var s = window.prompt("a)бүхэл тоогоор, b)10-тын бутархайгаар, c)100-тын бутархайгаар, d)1000-тын бутархайгаар");
+		var too = window.prompt("Тоогоо оруулна уу");
+		if(s=='d'){
+			roundToThousandths(too);
+		}
+		else if(s=='c'){
+			roundToHundredths(too);
+		}
+		else if(s=='b'){
+			roundToTenths(too);
+		}
+		else{
+			roundToInteger(too);
+		}
+		function roundToInteger(x){
+			y = Math.floor(x/10+.5)*10;
+			window.alert(y);
+		}
+		function roundToTenths(x){
+			y = Math.floor(x*10+.5)/10;
+			window.alert(y);
+		}
+		function roundToHundredths(x){
+			y = Math.floor(x*100+.5)/100;
+			window.alert(y);
+		}
+		function roundToThousandths(x){
+			y = Math.floor(x*1000+.5)/1000;
+			window.alert(y);
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>

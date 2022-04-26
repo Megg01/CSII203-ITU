@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab11-8</title>
+	<script type="text/javascript">
+		var x;
+		var k=window.prompt("k=");
+		k=parseInt(k);
+		switch(k){
+			case 1:
+				break;
+			case 2:
+			case 3:
+				++k;
+				break;
+			case 4:
+				--k;
+				break;
+			default:
+				k*=3;
+		}
+		x=k;
+		window.alert("x="+x);
+	</script>
+</head>
+<body>
+	<ol type="I">
+		<li>k=1 үед x=1</li>
+		<li>k=2 үед x=3</li>
+		<li>k=3 үед x=4</li>
+		<li>k=4 үед x=3</li>
+		<li>k=10 үед x=30</li>
+	</ol>
+</body>
+</html>

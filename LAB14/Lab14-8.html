@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab14-8</title>
+	<script type="text/javascript">
+		var text = window.prompt("Өгүүлбэрээ оруулна уу");
+		var ug = window.prompt("Хайх үгээ оруулна уу");
+		text = text.split(" ");
+		for(var i=0,total=0; i<text.length; i++){
+			if(text[i].indexOf(ug)!=-1){
+				if(ug.length==text[i].length){
+					total+=1;
+				}
+			}
+		}
+		document.writeln(total);
+	</script>
+</head>
+<body>
+</body>
+</html>

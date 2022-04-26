@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab13-8</title>
+	<script type="text/javascript">
+		function start(){
+			k=new Array(36)
+			for(var i=0;i<36;i++){
+				k[i]=Math.floor(1+Math.random()*6)+Math.floor(1+Math.random()*6);
+			}
+			output_array(k, document.getElementById("output"));
+		}
+		function output_array(theArray, output){
+			var content= "<table border='1'>";
+			var urt = theArray.length
+			for(var i=0;i<urt;i++){
+				content+=("<tr><th>"+(i+1)+"</th><th>"+theArray[i]+"</th></tr>");
+			}
+			content+="</table>";
+			output.innerHTML = content;
+		}
+		window.addEventListener("load",start, false);
+	</script>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div id="output"></div>
+</body>
+</html>

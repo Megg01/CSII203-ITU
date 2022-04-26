@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab13-4-i</title>
+	<script type="text/javascript">
+		function start(){
+			var t=[[1,2,3],[4,5,6]];
+			output_array(t, document.getElementById("index"));
+		}
+		function output_array(theArray, output){
+			var results="<table border='1'>",i;
+			var urt=theArray[0].length;
+			results+="<tr><th>index</th>";
+			for(i=0;i<urt;i++){
+				results+="<th>"+i+"</th>";
+			}
+			results+="</tr>";
+			i=0;
+			for(var row in theArray){
+				results+="<tr><th>"+i+"</th>";
+				for(var column in theArray[row]){
+					results+="<th>"+theArray[row][column]+"</th>";
+				}
+				results+="</tr>";
+				i++;
+			}
+			results+="</table";
+			output.innerHTML=results;
+		}
+		window.addEventListener("load",start, false);
+	</script>
+</head>
+<body>
+	<div id="index"></div>
+</body>
+</html>
