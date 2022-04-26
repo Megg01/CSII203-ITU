@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+table{
+	width: 75%;
+}
+tr{
+	font-family: 'Roboto', sans-serif;
+}
+#header{
+	background-color:#e89607;
+	color:white;
+	font-family: 'Economica', sans-serif;
+	font-size:40pt;
+	padding:30px;
+	border-radius:10px;
+}
+.navtext{
+	margin: 15px;
+	font-family: Tahoma;
+}
+.slogan{
+	font-size: 15pt;
+	text-transform:uppercase; 
+}
+#firstsidebar{
+	background-color:#008be8;
+	padding-bottom:45px;
+	padding-top:45px;
+	padding-left:5px;
+	padding-right:5px;
+	width:20%;
+}
+#secondsidebar{
+	background-color:#36f8ff;
+	color: white;
+	padding-top:45px;
+	padding-bottom:45px;
+
+}
+.main{
+	background-color:#ff6929;
+	color:white;
+	text-transform:uppercase;
+	font-size: 20pt;
+	font-family:Tahoma;
+	padding:10px;
+}
+.subtext{
+	font-style:italic;
+	font-size:13pt;
+}
+.footer{
+	background-color: #9e9e9e;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lab3</title>
+</head>
+<body>
+	<form method="post">
+		<input type="hidden" name="recipient" value="news@num.edu.mn">
+		<input type="hidden" name="subject" value="Form">
+		<input type="hidden" name="redirect" value="main.html">
+	<table style="width:450px; height:400px;"><body text="white">
+		<thead>
+			<tr bgcolor="#ffb330">
+				<td colspan="2"><font color="black">Sign Up</font></td>
+			</tr>
+		</thead>
+		<tbody bgcolor="#0052d6">
+			<tr>
+				<td style="text-align:right;">First name</td>
+				<td><label><input type="text" name="First name" placeholder="Enter First name..." required/></label></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">Last name</td>
+				<td><label><input type="text" name="Last name" placeholder="Enter Last name..." required/></label></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">Password</td>
+				<td><label><input type="Password" name="Password" placeholder="********" minlength="8" required/></label></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">Date of Birth</td>
+				<td><label><input type="Date" name="Date" placeholder="mm/dd/yyyy"></label></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">Gender</td>
+				<td><label><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female</label></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">Country</td>
+				<td><label for="txtList"><input type="text" name="txtList" placeholder="Country" list="months">
+					<datalist id="months">
+						<option value="Mongolia">
+						<option value="Japan">
+						<option value="Korea">
+						<option value="United Kingdom">
+						<option value="United States of America">
+						<option value="Russia">
+					</datalist>
+				</label></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">Comment</td>
+				<td><label for="Comment"><textarea name="Comment" placeholder="Type your comment here..."></textarea></label></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr bgcolor="#ff674d">
+				<th colspan="2">
+					<label><input type="checkbox" name="Agree to the term of use" required/>I agree to the Term of Use</label>
+				</th>	
+			</tr>
+			<tr bgcolor="#ffb330">
+				<td colspan="2" style="text-align:right;">
+					<input type="Submit" name="Submit" style="background-color:green; color:white; border-color:whitesmoke;">
+					<input type="Reset" name="Reset" style="background-color:red; color:white; border-color:whitesmoke;">
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+</body>
+</html>
